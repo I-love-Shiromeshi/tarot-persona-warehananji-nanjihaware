@@ -1,0 +1,1 @@
+# tarot-persona-warehananji-nanjihaware
