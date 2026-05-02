@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>タロット</title>
+
+<style>
+body{
+    background:#111;
+    color:white;
+    text-align:center;
+    font-family:sans-serif;
+    margin:0;
+    padding:20px;
+}
+
+#card{
+    width:280px;
+    max-width:80%;
+    transition: transform 0.45s ease;
+    transform-style:preserve-3d;
+}
+
+button{
+    font-size:24px;
+    padding:12px 28px;
+    margin-top:25px;
+    border:none;
+    border-radius:12px;
+}
+
+#result{
+    font-size:28px;
+    margin-top:20px;
+    min-height:40px;
+}
+
+#meaning{
+    margin-top:20px;
+    font-size:22px;
+    line-height:1.7;
+    min-height:120px;
+    white-space:pre-line;
+}
+</style>
+</head>
+
+<body>
+
+<img id="card" src="cards/back.jpg">
+
+<div id="result"></div>
+
+<button onclick="drawTarot()">占う</button>
+
+<div id="meaning"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
