@@ -90,6 +90,14 @@ down:["未完成","惰性","物足りなさ","低迷"]}
 
 ];
 
+tarotCards.forEach(card => {
+    const img1 = new Image();
+    img1.src = "cards/" + card.file;
+
+    const img2 = new Image();
+    img2.src = "cards/" + card.rev;
+});
+
 let revealed = false;
 
 function drawTarot(){
